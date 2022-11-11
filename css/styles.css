@@ -223,17 +223,18 @@ ul {
 
 .contact {
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-}
+  }
 
 .contact-info .contact:hover,
 .contact-info .contact:focus {
   color: var(--accent-color);
-}
+  }
 
 /* портфоліо */
 .title-work {
