@@ -206,8 +206,11 @@ ul {
 }
 
 /* footer */
+
+
 .footer-title {
   background-color: var(--bg-color-black);
+  font-family: "Roboto", sans-serif;
 }
 
 .logo-footer {
