@@ -52,7 +52,7 @@ ul {
 
 .site-nav {
   color: var(--primary-text-color);
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -63,19 +63,24 @@ ul {
   color: var(--accent-color);
 }
 
-.contact-nav .link:hover,
-.contact-nav .link:focus {
+.header-link{
+  color: var(--secondary-text-color);
+}
+
+.contact-nav .header-link:hover,
+.contact-nav .header-link:focus {
   color: var(--accent-color);
 }
 
 .contact-nav {
   color: var(--secondary-text-color);
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
 
 /* hero */
 .hero-title {
@@ -207,7 +212,6 @@ ul {
 
 /* footer */
 
-
 .footer-title {
   background-color: var(--bg-color-black);
   font-family: "Roboto", sans-serif;
@@ -232,12 +236,12 @@ ul {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-  }
+}
 
 .contact-info .contact:hover,
 .contact-info .contact:focus {
   color: var(--accent-color);
-  }
+}
 
 /* портфоліо */
 .title-work {
