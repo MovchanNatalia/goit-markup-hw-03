@@ -65,6 +65,7 @@ ul {
 
 .header-link{
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 
 .contact-nav .header-link:hover,
