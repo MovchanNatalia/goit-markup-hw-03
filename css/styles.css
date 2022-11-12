@@ -17,6 +17,7 @@
 }
 
 body {
+  color: var(--primary-text-color);
   background-color: var(--bg-color);
   font-family: "Roboto", sans-serif;
 }
@@ -29,6 +30,7 @@ ul {
 
 .logo {
   color: var(--title-text-color);
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -52,7 +54,6 @@ ul {
 
 .site-nav {
   color: var(--primary-text-color);
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -63,7 +64,7 @@ ul {
   color: var(--accent-color);
 }
 
-.header-link{
+.header-link {
   color: var(--secondary-text-color);
   text-decoration: none;
 }
@@ -75,13 +76,11 @@ ul {
 
 .contact-nav {
   color: var(--secondary-text-color);
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-
 
 /* hero */
 .hero-title {
@@ -101,15 +100,15 @@ ul {
 /* button */
 .btn-hero {
   color: var(--bg-color);
+  font-family: "Roboto", sans-serif;
   background-color: var(--accent-color);
   cursor: pointer;
-  width: 216px;
-  height: 50px;
-  left: 692px;
-  top: 430px;
   background: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 .btn-hero.btn:active {
@@ -117,14 +116,21 @@ ul {
   background-color: #188ce8;
 }
 
+.btn-hero:hover,
+.btn-hero:focus {
+  background-color: #188ce8;
+}
+
 .btn-work {
   color: var(--primary-text-color);
-  background-color: var(--bg-color-grey);
+  font-family: "Roboto", sans-serif;
+  background-color: var(--bg-color);
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 .btn-work.list:hover,
@@ -145,7 +151,6 @@ ul {
 
 .text {
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -181,7 +186,6 @@ ul {
 }
 
 .team-photo {
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -204,7 +208,6 @@ ul {
 
 .team-list {
   color: var(--secondary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
@@ -223,6 +226,7 @@ ul {
 }
 .adress {
   color: var(--bg-color);
+  font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -258,8 +262,4 @@ ul {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-}
-.project {
-  background-color: var(--bg-color);
-  border: 1px solid #eeeeee;
 }
