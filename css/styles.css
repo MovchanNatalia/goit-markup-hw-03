@@ -24,6 +24,8 @@ body {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .list {
@@ -49,7 +51,6 @@ h1 {
 .main-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .container {
@@ -68,7 +69,7 @@ h1 {
 .logo {
   margin-right: 93px;
   color: var(--title-text-color);
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -136,12 +137,20 @@ h1 {
   letter-spacing: 0.02em;
 }
 
+.contact-nav {
+  margin-left: auto;
+}
+
 .contact-nav .item + .item {
   margin-left: 40px;
 }
 
 /* hero */
 .hero-title {
+  padding-top: 200px;
+  padding-right: 452px;
+  padding-bottom: 280px;
+  padding-left: 452px;
   background-color: var(--bg-color-black);
   color: var(--bg-color);
   text-align: center;
@@ -158,7 +167,9 @@ h1 {
 }
 
 /* button */
+
 .btn-hero {
+  padding: 10px 24px;
   color: var(--bg-color);
   font-family: "Roboto", sans-serif;
   background-color: var(--accent-color);
@@ -182,9 +193,6 @@ h1 {
 }
 
 .btn-work {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
   justify-content: center;
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
@@ -195,6 +203,14 @@ h1 {
   line-height: 1.6;
   letter-spacing: 0.03em;
   cursor: pointer;
+}
+
+.butt{
+  margin-right: 8px;
+}
+
+.butt:last-child{
+  margin-right: 0;
 }
 
 .btn-work .list {
@@ -222,7 +238,6 @@ h1 {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  width: 270px;
 }
 
 .feature-title {
@@ -242,7 +257,6 @@ h1 {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  width: 270px;
 }
 
 .visually-hidden {
@@ -260,11 +274,10 @@ h1 {
 
 .feature-list {
   display: flex;
-  padding-right: 0;
-  padding-left: 0;
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
+}
+
+.feature-list > .feature-title {
+  flex-basis: calc(100% / 4);
 }
 
 /* чим ми займаємося */
@@ -285,14 +298,9 @@ h1 {
   letter-spacing: 0.03em;
 }
 
-.example {
-  margin-top: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+.section-work {
   padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
+  padding-bottom: 94px;
 }
 
 .card {
@@ -303,6 +311,10 @@ h1 {
   margin-right: 0;
 }
 
+.example > .card {
+  flex-basis: calc(100% / 3);
+}
+
 /* наша команда */
 .team {
   color: var(--primary-text-color);
@@ -311,12 +323,6 @@ h1 {
 
 .folder {
   display: flex;
-}
-
-.folder {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 .team-photo {
@@ -366,40 +372,46 @@ h1 {
   letter-spacing: 0.03em;
 }
 
-
-
-
-img{
+img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+.folder > .team-box {
+  flex-basis: calc(100% / 4);
+}
+
 /* footer */
 
 .footer-title {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--bg-color-black);
   font-family: "Roboto", sans-serif;
 }
 
-.footer-site {
-  padding-top: 60px;
+.logo-foot-site {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  text-decoration: none;
 }
 
 .logo-footer {
   color: var(--bg-color);
 }
 .adress {
-  padding-top: 28px;
-  padding-bottom: 12px;
+  margin-top: 28px;
+  margin-bottom: 12px;
   color: var(--bg-color);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  margin: 0;
-  
 }
 
 .contact {
@@ -456,16 +468,15 @@ img{
 .project-work {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0;
+  flex-basis: calc(100% / 9);
+  margin-top: 50px;
   margin-bottom: 0;
   padding-left: 0;
 }
 
 .project {
-  width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border: 1px solid #eeeeee;
 }
 
 .project:nth-child(3n) {
@@ -479,22 +490,8 @@ img{
 .ourworks {
   padding-top: 20px;
   padding-right: 24px;
-  padding-bottom: 4px;
-  padding-left: 24px;
-  margin-top: 0;
-}
-
-.category {
-  padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  
+  margin-top: 0;
+  border: 1px solid #eeeeee;
 }
-
-.butt {
-  margin-bottom: 50px;
-}
-
-.setting {
-  margin-left: 8px;
-  }
