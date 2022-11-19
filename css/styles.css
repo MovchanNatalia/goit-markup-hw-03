@@ -14,6 +14,7 @@
   --bg-color-black: #2f303a;
   --bg-color-grey: #f5f4fa;
   --primary-bg-color: #f5f5f5;
+  --footer-contact: rgba(255, 255, 255, 0.6);
 }
 
 body {
@@ -22,7 +23,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-ul {
+h2,
+ul,
+li,
+p {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -148,9 +152,9 @@ h1 {
 /* hero */
 .hero-title {
   padding-top: 200px;
-  padding-right: 452px;
+
   padding-bottom: 280px;
-  padding-left: 452px;
+
   background-color: var(--bg-color-black);
   color: var(--bg-color);
   text-align: center;
@@ -180,6 +184,7 @@ h1 {
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.06em;
+  border: none;
 }
 
 .btn-hero.btn:active {
@@ -197,7 +202,6 @@ h1 {
   color: var(--primary-text-color);
   font-family: "Roboto", sans-serif;
   background-color: var(--bg-color);
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -205,11 +209,11 @@ h1 {
   cursor: pointer;
 }
 
-.butt{
+.butt {
   margin-right: 8px;
 }
 
-.butt:last-child{
+.butt:last-child {
   margin-right: 0;
 }
 
@@ -224,6 +228,8 @@ h1 {
 .btn-work.list:focus {
   color: var(--bg-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* особливості */
@@ -277,7 +283,7 @@ h1 {
 }
 
 .feature-list > .feature-title {
-  flex-basis: calc(100% / 4);
+  flex-basis: calc((100% - 3 * 30px / 4));
 }
 
 /* чим ми займаємося */
@@ -337,10 +343,8 @@ h1 {
 }
 
 .team-name {
-  padding-top: 30px;
-  padding-bottom: 10px;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: ;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -362,7 +366,6 @@ h1 {
 }
 
 .team-list {
-  padding-bottom: 30px;
   margin-top: 0;
   margin-bottom: 0;
   color: var(--secondary-text-color);
@@ -370,6 +373,26 @@ h1 {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.igor {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.olga {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.kolya {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.miha {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 img {
@@ -403,8 +426,13 @@ img {
 .logo-footer {
   color: var(--bg-color);
 }
-.adress {
+
+.adress-sity {
   margin-top: 28px;
+}
+
+.adress {
+  padding: 0;
   margin-bottom: 12px;
   color: var(--bg-color);
   font-style: normal;
@@ -415,7 +443,7 @@ img {
 }
 
 .contact {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-contact);
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -436,11 +464,7 @@ img {
 }
 
 .contacttomail {
-  padding-bottom: 12px;
-}
-
-.contacttotel {
-  padding-bottom: 60px;
+  margin-bottom: 12px;
 }
 
 /* портфоліо */
@@ -455,23 +479,27 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin: 0;
+  margin-bottom: 4px;
 }
+
 .text-work {
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.9;
   letter-spacing: 0.03em;
-  margin: 0;
+  margin-bottom: 20px;
 }
 
 .project-work {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 9);
   margin-top: 50px;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+.project-work > .project{
+  width: calc((100% - 60px) / 3);
 }
 
 .project {
