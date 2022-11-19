@@ -294,8 +294,7 @@ h1 {
 
 .work {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;  
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -333,8 +332,7 @@ h1 {
 
 .team-photo {
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -411,7 +409,7 @@ img {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--bg-color-black);
-  font-family: "Roboto", sans-serif;
+  
 }
 
 .logo-foot-site {
